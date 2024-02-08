@@ -2776,6 +2776,7 @@ private:
 	std::bitset<ConditionType_t::CONDITION_COUNT> m_conditionSuppressions;
 
 	uint32_t level = 1;
+	uint32_t resets = 1;
 	uint32_t magLevel = 0;
 	uint32_t actionTaskEvent = 0;
 	uint32_t actionTaskEventPush = 0;
