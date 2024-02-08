@@ -117,7 +117,7 @@ std::string Player::getDescription(int32_t lookDistance) {
 	capitalizeWords(subjectPronoun);
 
 	if (lookDistance == -1) {
-		s << "yourself.";
+		s << "yourself [Reset " << resets << "].";
 
 		if (group->access) {
 			s << " You are " << group->name << '.';
@@ -137,7 +137,7 @@ std::string Player::getDescription(int32_t lookDistance) {
 	} else {
 		s << name;
 		if (!group->access) {
-			s << " (Level " << level << ')';
+			s << " (Level " << level << " [Resets: " << resets << "])";
 		}
 		s << '.';
 
